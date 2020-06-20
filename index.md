@@ -1,6 +1,4 @@
-theme: jekyll-theme-cayman
-title: Welcome to my Website
-description: A personal website to show all the projects I do
+
 
 ## Welcome to GitHub Pages
 
