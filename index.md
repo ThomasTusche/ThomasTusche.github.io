@@ -70,6 +70,9 @@ draws it's card and, as the rules states, stops after hitting 17 or more points.
 casino and decide who won. 
 To make it a bit more interesting you start with a certain amount of credits and have to leave if you run out of them.
 
+The Python code is available here:
+[Blackjack Code](https://github.com/ThomasTusche/blackjack)
+
 #### Hangman
 ![hangman](./hangman.png)
 
@@ -77,8 +80,18 @@ My second game was the Game Hangman. The projects comes with a wordlist from whi
 of letters the word has and loses the games if his guesses failes 6 times. Meanwhile each correct letter will be displayed, all guessed letters will be
 displayed, that you not chose the same letter twice and a graphics shows the state of your stickfigure.
 
+The Python code is available here:
+[Hangman Code](https://github.com/ThomasTusche/hangman)
+
 ### 3) Project: AWS Cost Allocator as Shell Script inside a Docker Container
 
+Costs are an important factor for any infrastructure whether being hosted inside a public cloud or not. At one point I had to gather specific costs
+of three different AWS Accounts and restructure the Data that could be displayed inside AWS Quicksight. Additionally, I wanted to run it inside a
+docker container on a sheduled basis. The container gets triggered by a Cloudwatch Rule, downloads the configuration and scripts, excecutes them 
+and upload the generated file on an S3 Bucket. 
+
+The Shell Script and Dockerfile is available here:
+[Costallocator_Projekt](https://github.com/ThomasTusche/awscli_cost_allocator)
 
 
 
