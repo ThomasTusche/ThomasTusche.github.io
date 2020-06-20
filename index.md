@@ -2,7 +2,7 @@
 
 ## **Welcome to my GitHub Website**
 
-Since quite a while I'm interested in Cloud Engineering and especially the DevOps / Automatisation part of it. Working with AWS, Terraform, Python, Docker and Kubernetes is a thrilling adventure and there's so much to learn and work on. The purpose of this website is to show my journey going through all this stuff, working on my own projects and share my code with you.   
+Since quite a while I'm interested in Cloud Engineering and especially the DevOps / Automatisation part of it. Working with AWS, Terraform, Python, Docker and Kubernetes is a thrilling adventure and there's so much to learn and work on. The purpose of this website is to show my journey going through all these tools and technologies and display the projects and code I've made.
 
 [Link to Github](https://github.com/ThomasTusche?tab=repositories) | [XING Profile](https://www.xing.com/profile/Thomas_Tusche4/cv)
 
@@ -10,7 +10,7 @@ Since quite a while I'm interested in Cloud Engineering and especially the DevOp
 
 ### **1) Project: Creating an environment with AWS, Terraform, Docker and Kubernetes for a wordpress website**
 
-The first project I want to share with you is an entire infrastructure I created to host a wordpress website on it. 
+The first project I want to share with you is an entire infrastructure I created to host a wordpress website on. 
 Nearly all AWS ressources were created with Terraform and deployed via CodePipeline. The Docker container is running
 inside a Kubernetes Cluster, which is deployed through a Pipeline aswell.
 
@@ -18,19 +18,19 @@ inside a Kubernetes Cluster, which is deployed through a Pipeline aswell.
 ![Aws_overview](./aws_overview.png)
 
 To create the EC2 machines, on which Kubernetes runs, I created a VPC with public and private subnets. By visiting the URL of my website, the traffic will be hitting
-AWS Route53 servive which automatically redirect the traffic to the Elastic Loadbalancer. The AWS ELB is listening for Http and Https traffic and 
-routes the packages to the the Kubernetes Node on which the Wordpress Service is running. This service is passing the traffic forward to the right container.
+the AWS Route53 service which automatically redirects the traffic to the Elastic Loadbalancer. The AWS ELB is listening for Http and Https traffic and 
+routes the packages to the Kubernetes Node on which the Wordpress Service is running. This service is passing the traffic forward to the right container.
 
 #### Terraform 
 ![Terraform_Pipeline](./terraform_pipeline.png)
 
-All my Terraform Code is placed inside a AWS CodeCommit Repository. Cloudwatch is monitoring the masterbranch and runs the
+All my Terraform Code is placed inside an AWS CodeCommit Repository. Cloudwatch is monitoring the master branch and runs the
 AWS CodePipeline everytime there is new code pushed to master. 
 My pipeline consists of four steps:
 - Recognising changes in the code
 - Running a "terraform plan" against the current infrastructure and display any upcoming changes
 - Waiting for a manual approval or rejection
-- After code approval runs the terraform apply
+- After code approval, runs the terraform apply
 
 The Terraform code is available here:
 [Terraform Repo](https://github.com/ThomasTusche/portfolio-website/tree/master/terraform)
@@ -53,20 +53,20 @@ The Kubernetes code is available here:
 ![Docker_Pipeline](./docker_pipeline.png)
 
 I created two container, one running Wordpress and the other one running the MySQL Server. Both are storing their files on the EBS
-volume of the worker node, to keep the data even if pods are getting destroyed or restartet. Normally I would store the data on an EFS Share
+volume of the worker node, to keep the data even if pods are getting destroyed or restartet. Normally, I would store the data on an EFS Share
 but here I went for the most simple solution.
 
 
-### **2) Project: Diving deeper into Python**
+### **2) Project: Python**
 
-Python is incredible powerfull while being relatively easy to write. Atleast for me, it is the first language I could really stick too, being not
-a developer. Here are some project and code example I did recently.
+Python is incredible powerful while being relatively easy to write. Atleast for me, it is the first programming language I could really stick to, being not
+a developer. Here are some projects and code example I did recently.
 
 #### Blackjack
 ![blackjack](./blackjack.png)
 
-The first game I tried was the casino game Blackjack. The dealer gives you card after card until you stop or reach over 21. Afterwards the "Casino"
-draws it's card and, as the rules states, stops after hitting 17 or more points. The next step is to evaluate the points of the player against the
+The first game I tried was the casino game Blackjack. The dealer gives you a card after card until you stop or reach over 21. Afterwards the "Casino"
+draws it's cards and, as the rules states, stops after hitting 17 or more points. The next step is to evaluate the points of the player against the
 casino and decide who won. 
 To make it a bit more interesting you start with a certain amount of credits and have to leave if you run out of them.
 
@@ -76,17 +76,18 @@ The Python code is available here:
 #### Hangman
 ![hangman](./hangman.png)
 
-My second game was the Game Hangman. The projects comes with a wordlist from which a random word is being chosen. The player gets to know the amount
-of letters the word has and loses the games if his guesses failes 6 times. Meanwhile each correct letter will be displayed, all guessed letters will be
-displayed, that you not chose the same letter twice and a graphics shows the state of your stickfigure.
+My second game was the Game Hangman. The project comes with a wordlist from which a random word is being chosen. The player gets to know the amount
+of letters the word has and loses the games if his guesses failes 6 times. All guessed letters will be displayed, that you not chose the same letter twice,
+and all correct letters will be additionally displayed at the spot they're appearing in the word. During your guesses, the Hangman figure will be painted
+and for each wrong answer a new body part will be added to the stickman.
 
 The Python code is available here:
 [Hangman Code](https://github.com/ThomasTusche/hangman)
 
-### **3) Project: AWS Cost Allocator as Shell Script inside a Docker Container**
+### **3) Project: AWS Cost Allocator Shell Script inside a Docker Container**
 
 Costs are an important factor for any infrastructure whether being hosted inside a public cloud or not. At one point I had to gather specific costs
-of three different AWS Accounts and restructure the Data that could be displayed inside AWS Quicksight. Additionally, I wanted to run it inside a
+of three different AWS Accounts and restructure the Data that they could be displayed inside AWS Quicksight. Additionally, I wanted to run it inside a
 docker container on a sheduled basis. The container gets triggered by a Cloudwatch Rule, downloads the configuration and scripts, excecutes them 
 and upload the generated file on an S3 Bucket. 
 
