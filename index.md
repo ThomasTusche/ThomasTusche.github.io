@@ -1,6 +1,6 @@
 
 
-## *Welcome to my GitHub Webseit*
+## **Welcome to my GitHub Website**
 
 Since quite a while I'm interested in Cloud Engineering and especially the DevOps / Automatisation part of it. Working with AWS, Terraform, Python, Docker and Kubernetes is a thrilling adventure and there's so much to learn and work on. The purpose of this website is to show my journey going through all this stuff, working on my own projects and share my code with you.   
 
@@ -8,7 +8,7 @@ Since quite a while I'm interested in Cloud Engineering and especially the DevOp
 
 
 
-### *1) Project: Creating an environment with AWS, Terraform, Docker and Kubernetes for a wordpress website*
+### **1) Project: Creating an environment with AWS, Terraform, Docker and Kubernetes for a wordpress website**
 
 The first project I want to share with you is an entire infrastructure I created to host a wordpress website on it. 
 Nearly all AWS ressources were created with Terraform and deployed via CodePipeline. The Docker container is running
@@ -57,7 +57,7 @@ volume of the worker node, to keep the data even if pods are getting destroyed o
 but here I went for the most simple solution.
 
 
-### *2) Project: Diving deeper into Python*
+### **2) Project: Diving deeper into Python**
 
 Python is incredible powerfull while being relatively easy to write. Atleast for me, it is the first language I could really stick too, being not
 a developer. Here are some project and code example I did recently.
@@ -83,7 +83,7 @@ displayed, that you not chose the same letter twice and a graphics shows the sta
 The Python code is available here:
 [Hangman Code](https://github.com/ThomasTusche/hangman)
 
-### *3) Project: AWS Cost Allocator as Shell Script inside a Docker Container*
+### **3) Project: AWS Cost Allocator as Shell Script inside a Docker Container**
 
 Costs are an important factor for any infrastructure whether being hosted inside a public cloud or not. At one point I had to gather specific costs
 of three different AWS Accounts and restructure the Data that could be displayed inside AWS Quicksight. Additionally, I wanted to run it inside a
