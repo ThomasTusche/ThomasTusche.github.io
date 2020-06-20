@@ -1,21 +1,21 @@
 
 
-## Welcome to GitHub Pages
+## Welcome to my GitHub Webseit
 
-You can use the [editor on GitHub](https://github.com/ThomasTusche/ThomasTusche.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Since quite a while I'm interested in Cloud Engineering and especially the DevOps / Automatisation part of it. Working with AWS, Terraform, Python, Docker and Kubernetes is a thrilling adventure and there's so much to learn and work on. The purpose of this website is to show my journey going through all this stuff, working on my own project and share my code with you.   
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[My GitHub Repos](https://github.com/ThomasTusche?tab=repositories)
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+### 1) Project: Creating an environment with AWS, Terraform, Docker and Kubernetes for a wordpress website
 
-# Header 1
-## Header 2
-### Header 3
+The first project I want to share with you is an entire infrastructure I created to host a wordpress website on it. 
+Nearly all AWS ressources were created with Terraform and deployed via CodePipeline. The Docker container is running
+inside a Kubernetes Cluster, which is deployed through a Pipeline aswell.
+
+#### Terraform 
+
 
 - Bulleted
 - List
