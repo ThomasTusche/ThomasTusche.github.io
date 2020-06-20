@@ -4,7 +4,7 @@
 
 Since quite a while I'm interested in Cloud Engineering and especially the DevOps / Automatisation part of it. Working with AWS, Terraform, Python, Docker and Kubernetes is a thrilling adventure and there's so much to learn and work on. The purpose of this website is to show my journey going through all this stuff, working on my own projects and share my code with you.   
 
-[My GitHub Repos](https://github.com/ThomasTusche?tab=repositories)
+[Link to Github](https://github.com/ThomasTusche?tab=repositories) | [XING Profile](https://www.xing.com/profile/Thomas_Tusche4/cv)
 
 
 
