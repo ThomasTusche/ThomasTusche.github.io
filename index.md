@@ -62,5 +62,23 @@ but here I went for the most simple solution.
 Python is incredible powerfull while being relatively easy to write. Atleast for me, it is the first language I could really stick too, being not
 a developer. Here are some project and code example I did recently.
 
-#### 
+#### Blackjack
+![blackjack](./blackjack.png)
+
+The first game I tried was the casino game Blackjack. The dealer gives you card after card until you stop or reach over 21. Afterwards the "Casino"
+draws it's card and, as the rules states, stops after hitting 17 or more points. The next step is to evaluate the points of the player against the
+casino and decide who won. 
+To make it a bit more interesting you start with a certain amount of credits and have to leave if you run out of them.
+
+#### Hangman
+![hangman](./hangman.png)
+
+My second game was the Game Hangman. The projects comes with a wordlist from which a random word is being chosen. The player gets to know the amount
+of letters the word has and loses the games if his guesses failes 6 times. Meanwhile each correct letter will be displayed, all guessed letters will be
+displayed, that you not chose the same letter twice and a graphics shows the state of your stickfigure.
+
+### 3) Project: AWS Cost Allocator as Shell Script inside a Docker Container
+
+
+
 
