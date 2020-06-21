@@ -4,7 +4,7 @@
 
 Since quite a while I'm interested in Cloud Engineering and especially the DevOps / Automatisation part of it. Working with AWS, Terraform, Python, Docker and Kubernetes is a thrilling adventure and there's so much to learn and work on. The purpose of this website is to show my journey going through all these tools and technologies and display the projects and code I've made.
 
-[Link to Github](https://github.com/ThomasTusche?tab=repositories) | [XING Profile](https://www.xing.com/profile/Thomas_Tusche4/cv)
+[**Link to Github**](https://github.com/ThomasTusche?tab=repositories) | [**XING Profile**](https://www.xing.com/profile/Thomas_Tusche4/cv)
 
 
 
@@ -85,6 +85,7 @@ The Python code is available here:
 [Hangman Code](https://github.com/ThomasTusche/hangman)
 
 ### **3) Project: AWS Cost Allocator Shell Script inside a Docker Container**
+![cost_allocator](./cost_allocator.png)
 
 Costs are an important factor for any infrastructure whether being hosted inside a public cloud or not. At one point I had to gather specific costs
 of three different AWS Accounts and restructure the Data that they could be displayed inside AWS Quicksight. Additionally, I wanted to run it inside a
