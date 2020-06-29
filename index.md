@@ -81,8 +81,13 @@ of letters the word has and loses the games if his guesses failes 6 times. All g
 and all correct letters will be additionally displayed at the spot they're appearing in the word. During your guesses, the Hangman figure will be painted
 and for each wrong answer a new body part will be added to the stickman.
 
+#### Weather App
+![weather_app](./weather_app.png)
+
+For this project I created a simple GUI with the Python Module *tkinter* and used a *http.client* to query the rapidapi.com "open-weather-map" API. To use this code you only have to enter your own API Key and you are good to go.
+
 The Python code is available here:
-[Hangman Code](https://github.com/ThomasTusche/hangman)
+[Weather App Code](https://github.com/ThomasTusche/weather_app)
 
 ### **3) Project: AWS Cost Allocator Shell Script inside a Docker Container**
 ![cost_allocator](./cost_allocator.png)
