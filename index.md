@@ -62,6 +62,23 @@ but here I went for the most simple solution.
 Python is incredible powerful while being relatively easy to write. Atleast for me, it is the first programming language I could really stick to, being not
 a developer. Here are some projects and code example I did recently.
 
+#### Weather App
+![weather_app](./weather_app.png)
+
+For this project I created a simple GUI with the Python Module *tkinter* and used a *http.client* to query the rapidapi.com "open-weather-map" API. To use this code you only have to enter your own API Key and you are good to go.
+
+The Python code is available here:
+[Weather App Code](https://github.com/ThomasTusche/weather_app)
+
+#### List User of a specific group and keep only those, who are not member of certain other groups
+![AD User Group Script](./ad_user_in_group.png)
+
+Sometimes you have an Active Directory Group giving basic access to some tool. Additionally, there are groups based on different departments, which extends those permissions. It can happen, that people end up getting the basic access but never made it into one of those department groups, therefore can enter a tool but not using it. 
+This script however can scan a specific group, list all its users and check wether or not the user is in one of those department groups. It will crate two CSV file, one with the users without a department group and one where the "good" users are with their groups. Both lists include the Display Name, Username and Email address of the user and will be uploaded to S3 after the script is finished.
+
+The Python code is available here:
+[List AD User Code](https://github.com/ThomasTusche/get-ad-user)
+
 #### Blackjack
 ![blackjack](./blackjack.png)
 
@@ -81,15 +98,8 @@ of letters the word has and loses the games if his guesses failes 6 times. All g
 and all correct letters will be additionally displayed at the spot they're appearing in the word. During your guesses, the Hangman figure will be painted
 and for each wrong answer a new body part will be added to the stickman.
 
-#### Weather App
-![weather_app](./weather_app.png)
 
-For this project I created a simple GUI with the Python Module *tkinter* and used a *http.client* to query the rapidapi.com "open-weather-map" API. To use this code you only have to enter your own API Key and you are good to go.
-
-The Python code is available here:
-[Weather App Code](https://github.com/ThomasTusche/weather_app)
-
-### **3) Project: AWS Cost Allocator Shell Script inside a Docker Container**
+### **3) Project: AWS Cost Allocator Shell Script inside a Docker Container (AWS CLI & Shell)**
 ![cost_allocator](./cost_allocator.png)
 
 Costs are an important factor for any infrastructure whether being hosted inside a public cloud or not. At one point I had to gather specific costs
