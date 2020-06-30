@@ -8,7 +8,7 @@ Since quite a while I'm interested in Cloud Engineering and especially the DevOp
 
 
 
-### **1) Project: Creating an environment with AWS, Terraform, Docker and Kubernetes for a wordpress website**
+### **Project: Creating an environment with AWS, Terraform, Docker and Kubernetes for a wordpress website**
 
 The first project I want to share with you is an entire infrastructure I created to host a wordpress website on. 
 Nearly all AWS ressources were created with Terraform and deployed via CodePipeline. The Docker container is running
@@ -57,12 +57,12 @@ volume of the worker node, to keep the data even if pods are getting destroyed o
 but here I went for the most simple solution.
 
 
-### **2) Project: Python**
+### **Python Projects**
 
 Python is incredible powerful while being relatively easy to write. Atleast for me, it is the first programming language I could really stick to, being not
 a developer. Here are some projects and code example I did recently.
 
-#### Weather App
+#### 1) Weather App
 ![weather_app](./weather_app.png)
 
 For this project I created a simple GUI with the Python Module *tkinter* and used a *http.client* to query the rapidapi.com "open-weather-map" API. To use this code you only have to enter your own API Key and you are good to go.
@@ -70,7 +70,7 @@ For this project I created a simple GUI with the Python Module *tkinter* and use
 The Python code is available here:
 [Weather App Code](https://github.com/ThomasTusche/weather_app)
 
-#### List User of a specific group and keep only those, who are not member of certain other groups
+#### 2) List User of a specific group and keep only those, who are not member of certain other groups
 ![AD User Group Script](./ad_user_in_group.png)
 
 Sometimes you have an Active Directory Group giving basic access to some tool. Additionally, there are groups based on different departments, which extends those permissions. It can happen, that people end up getting the basic access but never made it into one of those department groups, therefore can enter a tool but not using it. 
@@ -79,7 +79,15 @@ This script however can scan a specific group, list all its users and check weth
 The Python code is available here:
 [List AD User Code](https://github.com/ThomasTusche/get-ad-user)
 
-#### Blackjack
+#### 3) Add user to AD Group by sending an Email
+![Add User to Group by Email](./user-to-group-by-email.png)
+
+I created a Lambda script and automatization to add user to an AD Group by sending an Email. For this you have to create a AWS workmail mailbox, connect it to SES which triggers a SNS Topic that fires the Lambda. It is a neat little thing which can be extended a lot more to make many manual tasks inside the AD more feasable.
+
+The Python code is available here:
+[Group to User by Email Code](https://github.com/ThomasTusche/user-to-group)
+
+#### 4) Blackjack
 ![blackjack](./blackjack.png)
 
 The first game I tried was the casino game Blackjack. The dealer gives you a card after card until you stop or reach over 21. Afterwards the "Casino"
@@ -90,7 +98,7 @@ To make it a bit more interesting you start with a certain amount of credits and
 The Python code is available here:
 [Blackjack Code](https://github.com/ThomasTusche/blackjack)
 
-#### Hangman
+#### 5) Hangman
 ![hangman](./hangman.png)
 
 My second game was the Game Hangman. The project comes with a wordlist from which a random word is being chosen. The player gets to know the amount
@@ -99,7 +107,7 @@ and all correct letters will be additionally displayed at the spot they're appea
 and for each wrong answer a new body part will be added to the stickman.
 
 
-### **3) Project: AWS Cost Allocator Shell Script inside a Docker Container (AWS CLI & Shell)**
+### **Project: AWS Cost Allocator Shell Script inside a Docker Container (AWS CLI & Shell)**
 ![cost_allocator](./cost_allocator.png)
 
 Costs are an important factor for any infrastructure whether being hosted inside a public cloud or not. At one point I had to gather specific costs
